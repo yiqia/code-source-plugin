@@ -1,5 +1,5 @@
-const CodeSourcePlugin = require("./src/code-source-plugin") ;
+const CodeSourcePlugin = require('./src/main');
 
-module.exports =  {
-  CodeSourcePlugin
+module.exports = {
+  CodeSourcePlugin,
 };

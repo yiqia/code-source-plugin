@@ -14,7 +14,11 @@ importers:
       '@types/node': '*'
       '@webpack-cli/generators': ^2.5.0
       babel-loader: ^8.2.5
+      eslint: ^8.25.0
+      eslint-config-airbnb-base: ^15.0.0
+      eslint-plugin-import: ^2.25.2
       eslint-scope: ^5.1.1
+      husky: ^8.0.1
       webpack: ^5.74.0
       webpack-cli: ^4.10.0
     dependencies:
@@ -30,6 +34,10 @@ importers:
       '@types/node': mirrors.tencent.com/@types/node/18.11.8
       '@webpack-cli/generators': mirrors.tencent.com/@webpack-cli/generators/2.5.0_webpack@5.74.0
       babel-loader: mirrors.tencent.com/babel-loader/8.2.5_6zc4kxld457avlfyhj3lzsljlm
+      eslint: mirrors.tencent.com/eslint/8.26.0
+      eslint-config-airbnb-base: mirrors.tencent.com/eslint-config-airbnb-base/15.0.0_mynvxvmq5qtyojffiqgev4x7mm
+      eslint-plugin-import: mirrors.tencent.com/eslint-plugin-import/2.26.0_eslint@8.26.0
+      husky: mirrors.tencent.com/husky/8.0.1
       webpack: mirrors.tencent.com/webpack/5.74.0_webpack-cli@4.10.0
       webpack-cli: mirrors.tencent.com/webpack-cli/4.10.0_tgijosa5elcqvekttf7wvxrynq
 
@@ -3507,7 +3515,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       webpack: mirrors.tencent.com/webpack/5.74.0_webpack-cli@4.10.0
-      webpack-cli: mirrors.tencent.com/webpack-cli/4.10.0_vnmgq7jx5zjkzolvtfp7mdf5ri
+      webpack-cli: mirrors.tencent.com/webpack-cli/4.10.0_tgijosa5elcqvekttf7wvxrynq
 
   mirrors.tencent.com/@webpack-cli/generators/2.5.0_webpack@5.74.0:
     resolution: {integrity: sha512-0KGSL4TQSQ4ajyRKcq6dcL9TRcqbBtmhpF8mMrt0jf7kmC6WC1S201xznxO6q1bAoy5eUxtqikkhPwUSR0Zghg==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/@webpack-cli%2fgenerators/-/generators-2.5.0.tgz}
@@ -3542,7 +3550,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       envinfo: mirrors.tencent.com/envinfo/7.8.1
-      webpack-cli: mirrors.tencent.com/webpack-cli/4.10.0_vnmgq7jx5zjkzolvtfp7mdf5ri
+      webpack-cli: mirrors.tencent.com/webpack-cli/4.10.0_tgijosa5elcqvekttf7wvxrynq
 
   mirrors.tencent.com/@webpack-cli/serve/1.7.0_ud4agclah7rahur6ntojouq57y:
     resolution: {integrity: sha512-oxnCNGj88fL+xzV+dacXs44HcDwf1ovs3AuEzvP7mqXw7fQntqIhQ1BRmynh4qEKQSSSRSWVyXRjmTbZIX9V2Q==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/@webpack-cli%2fserve/-/serve-1.7.0.tgz}
@@ -3558,6 +3566,7 @@ packages:
     dependencies:
       webpack-cli: mirrors.tencent.com/webpack-cli/4.10.0_vnmgq7jx5zjkzolvtfp7mdf5ri
       webpack-dev-server: mirrors.tencent.com/webpack-dev-server/4.11.1_5v66e2inugklgvlh4huuavolfq
+    dev: true
 
   mirrors.tencent.com/@webpack-cli/serve/1.7.0_webpack-cli@4.10.0:
     resolution: {integrity: sha512-oxnCNGj88fL+xzV+dacXs44HcDwf1ovs3AuEzvP7mqXw7fQntqIhQ1BRmynh4qEKQSSSRSWVyXRjmTbZIX9V2Q==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/@webpack-cli%2fserve/-/serve-1.7.0.tgz}
@@ -4075,7 +4084,7 @@ packages:
     name: axios
     version: 0.21.4
     dependencies:
-      follow-redirects: mirrors.tencent.com/follow-redirects/1.15.2
+      follow-redirects: mirrors.tencent.com/follow-redirects/1.15.2_debug@3.2.7
     transitivePeerDependencies:
       - debug
     optional: true
@@ -6108,6 +6117,24 @@ packages:
       semver: mirrors.tencent.com/semver/6.3.0
     dev: true
 
+  mirrors.tencent.com/eslint-config-airbnb-base/15.0.0_mynvxvmq5qtyojffiqgev4x7mm:
+    resolution: {integrity: sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/eslint-config-airbnb-base/-/eslint-config-airbnb-base-15.0.0.tgz}
+    id: mirrors.tencent.com/eslint-config-airbnb-base/15.0.0
+    name: eslint-config-airbnb-base
+    version: 15.0.0
+    engines: {node: ^10.12.0 || >=12.0.0}
+    peerDependencies:
+      eslint: ^7.32.0 || ^8.2.0
+      eslint-plugin-import: ^2.25.2
+    dependencies:
+      confusing-browser-globals: mirrors.tencent.com/confusing-browser-globals/1.0.11
+      eslint: mirrors.tencent.com/eslint/8.26.0
+      eslint-plugin-import: mirrors.tencent.com/eslint-plugin-import/2.26.0_eslint@8.26.0
+      object.assign: mirrors.tencent.com/object.assign/4.1.4
+      object.entries: mirrors.tencent.com/object.entries/1.1.5
+      semver: mirrors.tencent.com/semver/6.3.0
+    dev: true
+
   mirrors.tencent.com/eslint-config-prettier/8.5.0_eslint@8.26.0:
     resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz}
     id: mirrors.tencent.com/eslint-config-prettier/8.5.0
@@ -6166,6 +6193,37 @@ packages:
       resolve: mirrors.tencent.com/resolve/1.22.1
     transitivePeerDependencies:
       - supports-color
+
+  mirrors.tencent.com/eslint-module-utils/2.7.4_hlaciezb73cmunfvgdjxsiv7zy:
+    resolution: {integrity: sha512-j4GT+rqzCoRKHwURX7pddtIPGySnX9Si/cgMI5ztrcqOPtk5dDEeZ34CQVPphnqkJytlc97Vuk05Um2mJ3gEQA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/eslint-module-utils/-/eslint-module-utils-2.7.4.tgz}
+    id: mirrors.tencent.com/eslint-module-utils/2.7.4
+    name: eslint-module-utils
+    version: 2.7.4
+    engines: {node: '>=4'}
+    peerDependencies:
+      '@typescript-eslint/parser': '*'
+      eslint: '*'
+      eslint-import-resolver-node: '*'
+      eslint-import-resolver-typescript: '*'
+      eslint-import-resolver-webpack: '*'
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
+      eslint:
+        optional: true
+      eslint-import-resolver-node:
+        optional: true
+      eslint-import-resolver-typescript:
+        optional: true
+      eslint-import-resolver-webpack:
+        optional: true
+    dependencies:
+      debug: mirrors.tencent.com/debug/3.2.7
+      eslint: mirrors.tencent.com/eslint/8.26.0
+      eslint-import-resolver-node: mirrors.tencent.com/eslint-import-resolver-node/0.3.6
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   mirrors.tencent.com/eslint-module-utils/2.7.4_yytd4qhylm3dyr3j4r4rwmq2vy:
     resolution: {integrity: sha512-j4GT+rqzCoRKHwURX7pddtIPGySnX9Si/cgMI5ztrcqOPtk5dDEeZ34CQVPphnqkJytlc97Vuk05Um2mJ3gEQA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/eslint-module-utils/-/eslint-module-utils-2.7.4.tgz}
@@ -6247,6 +6305,39 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+
+  mirrors.tencent.com/eslint-plugin-import/2.26.0_eslint@8.26.0:
+    resolution: {integrity: sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/eslint-plugin-import/-/eslint-plugin-import-2.26.0.tgz}
+    id: mirrors.tencent.com/eslint-plugin-import/2.26.0
+    name: eslint-plugin-import
+    version: 2.26.0
+    engines: {node: '>=4'}
+    peerDependencies:
+      '@typescript-eslint/parser': '*'
+      eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
+    dependencies:
+      array-includes: mirrors.tencent.com/array-includes/3.1.5
+      array.prototype.flat: mirrors.tencent.com/array.prototype.flat/1.3.1
+      debug: mirrors.tencent.com/debug/2.6.9
+      doctrine: mirrors.tencent.com/doctrine/2.1.0
+      eslint: mirrors.tencent.com/eslint/8.26.0
+      eslint-import-resolver-node: mirrors.tencent.com/eslint-import-resolver-node/0.3.6
+      eslint-module-utils: mirrors.tencent.com/eslint-module-utils/2.7.4_hlaciezb73cmunfvgdjxsiv7zy
+      has: mirrors.tencent.com/has/1.0.3
+      is-core-module: mirrors.tencent.com/is-core-module/2.11.0
+      is-glob: mirrors.tencent.com/is-glob/4.0.3
+      minimatch: mirrors.tencent.com/minimatch/3.1.2
+      object.values: mirrors.tencent.com/object.values/1.1.5
+      resolve: mirrors.tencent.com/resolve/1.22.1
+      tsconfig-paths: mirrors.tencent.com/tsconfig-paths/3.14.1
+    transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
+    dev: true
 
   mirrors.tencent.com/eslint-plugin-jest/25.7.0_cng6ymo6fcsut4zagnn7nkm2fu:
     resolution: {integrity: sha512-PWLUEXeeF7C9QGKqvdSbzLOiLTx+bno7/HC9eefePfEb257QFHg7ye3dh80AZVkaa/RQsBB1Q/ORQvg2X7F0NQ==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/eslint-plugin-jest/-/eslint-plugin-jest-25.7.0.tgz}
@@ -6902,6 +6993,21 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
+
+  mirrors.tencent.com/follow-redirects/1.15.2_debug@3.2.7:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/follow-redirects/-/follow-redirects-1.15.2.tgz}
+    id: mirrors.tencent.com/follow-redirects/1.15.2
+    name: follow-redirects
+    version: 1.15.2
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dependencies:
+      debug: mirrors.tencent.com/debug/3.2.7
+    optional: true
 
   mirrors.tencent.com/for-in/1.0.2:
     resolution: {integrity: sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/for-in/-/for-in-1.0.2.tgz}
@@ -7681,6 +7787,14 @@ packages:
     version: 1.2.1
     dependencies:
       ms: mirrors.tencent.com/ms/2.1.3
+
+  mirrors.tencent.com/husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/husky/-/husky-8.0.1.tgz}
+    name: husky
+    version: 8.0.1
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   mirrors.tencent.com/iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/iconv-lite/-/iconv-lite-0.4.24.tgz}
@@ -14383,6 +14497,7 @@ packages:
       webpack: mirrors.tencent.com/webpack/5.74.0_webpack-cli@4.10.0
       webpack-dev-server: mirrors.tencent.com/webpack-dev-server/4.11.1_5v66e2inugklgvlh4huuavolfq
       webpack-merge: mirrors.tencent.com/webpack-merge/5.8.0
+    dev: true
 
   mirrors.tencent.com/webpack-dev-middleware/5.3.3_webpack@5.74.0:
     resolution: {integrity: sha512-hj5CYrY0bZLB+eTO+x/j67Pkrquiy7kWepMHmUMoPsmcUaeEnQJqFzHJOyxgWlq746/wUuA64p9ta34Kyb01pA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/webpack-dev-middleware/-/webpack-dev-middleware-5.3.3.tgz}
@@ -14450,6 +14565,7 @@ packages:
       - debug
       - supports-color
       - utf-8-validate
+    dev: true
 
   mirrors.tencent.com/webpack-dev-server/4.11.1_webpack@5.74.0:
     resolution: {integrity: sha512-lILVz9tAUy1zGFwieuaQtYiadImb5M3d+H+L1zDYalYoDl0cksAB1UNyuE5MMWJrG6zR1tXkCP2fitl7yoUJiw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/webpack-dev-server/-/webpack-dev-server-4.11.1.tgz}

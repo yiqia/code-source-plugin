@@ -1,0 +1,9 @@
+dist/
+esm/
+lib/
+cjs/
+lib/
+es/
+node_modules/
+static
+cypress
